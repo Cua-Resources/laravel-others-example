@@ -1,0 +1,12 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+//Module {module}
+Route::group(['namespace' => 'Modules\{module}\app\Http\Controllers'], function () {
+  /*  Route::prefix('users')->group(function () {
+    Route::get('/', 'UserController@index');
+    Route::get('/detail/{id}', 'UserController@detail');
+    Route::get('/create', 'UserController@create');
+  });*/
+});
