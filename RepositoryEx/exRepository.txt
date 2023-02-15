@@ -1,20 +1,17 @@
 <?php
 
-namespace Modules\{module}\Repositories;
+namespace Modules\{module}\Repositories\Eloquent;
 
-use App\Repositories\BaseRepository;
-use Modules\{module}\Entities\{module};
-use Modules\{module}\Repositories\{module}RepositoryInterface;
+use Modules\{module}\Entities\{model};
+use Modules\{module}\Repositories\Interfaces\{model}Interface;
+use Modules\{module}\Supports\Repositories\Eloquent\RepositoriesAbstract;
 
-class {module}Repository extends BaseRepository implements {module}RepositoryInterface
+class {model}Repository extends RepositoriesAbstract implements {model}Interface
 {
-  //lấy model tương ứng
-  public function getModel()
+  protected $model;
+
+  public function __construct({model} $model)
   {
-    return {module}::class;
-  }
-  public function get{module}s()
-  {
-    return $this->model->all();
+    $this->model = $model;
   }
 }

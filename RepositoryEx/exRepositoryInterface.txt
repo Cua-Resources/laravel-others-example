@@ -1,10 +1,10 @@
 <?php
 
-namespace Modules\{module}\Repositories;
+namespace Modules\{module}\Repositories\Interfaces;
 
-use App\Repositories\RepositoryInterface;
+use Modules\{module}\Supports\Repositories\Interfaces\RepositoryInterface;
 
-interface {module}RepositoryInterface extends RepositoryInterface
+interface {model}Interface extends RepositoryInterface
 {
-  public function get{module}s();
+  //
 }
