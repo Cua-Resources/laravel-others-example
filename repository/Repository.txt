@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Repositories\Eloquent;
+namespace App\Repositories\{model}\Eloquent;
 
 use App\Models\{model};
-use App\Repositories\Interfaces\{model}Interface;
+use App\Repositories\{model}\Interfaces\{model}Interface;
 use App\Supports\Repositories\Eloquent\RepositoriesAbstract;
 
 class {model}Repository extends RepositoriesAbstract implements {model}Interface
